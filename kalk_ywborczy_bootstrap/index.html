@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>main{
+    
+    width: 50%;
+    margin: auto;
+
+    }</style>
+
+
+    <title>kalk wyborczy Filip Bednarek</title>
+  </head>
+  <body >
+    <main class=" text-danger">
+      <h1 class="text-center m-5 text-danger">Kalkulator Wyborczy</h1>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm"
+          >Nazwa komitetu:</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+        />
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="flexCheckDefault">
+          Czy jest koalicją
+        </label>
+
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm"
+          >Ilość głosów:</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+        />
+      </div>
+      <button type="button" class="btn btn-secondary m-4">
+        Dodaj kolejny komitet
+      </button>
+      <button type="button" class="btn btn-secondary m-4">
+        Sprawdź wynik procentowy
+      </button>
+
+      <ol class="list-group list-group-numbered m-4">
+        <li class="list-group-item">PTSD, ilośc głosów: 18972</li>
+        <li class="list-group-item">ABC, ilośc głosów: 1897</li>
+        <li class="list-group-item">JKA, ilośc głosów: 189</li>
+      </ol>
+
+      <h2 class="text-danger text-center m-5">Wyniki wyborów</h2>
+
+      <table class="table m-4">
+        <thead>
+          <tr class="table-light">
+            <th scope="col">LP</th>
+            <th scope="col">Nazwa komitetu</th>
+            <th scope="col">Próg wyborczy (%)</th>
+            <th scope="col">ilosć głosów</th>
+            <th scope="col">Wynik procentowy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">1</th>
+
+            <td>PTSD</td>
+            <td>8</td>
+            <td>18972</td>
+            <td>86.34</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">2</th>
+            <td>ABC</td>
+            <td>5</td>
+            <td>1897</td>
+            <td>15.46</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">3</th>
+            <td>JKA</td>
+            <td>8</td>
+            <td>189</td>
+            <td>4.77</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
